@@ -1,0 +1,13 @@
+# requirements.txt
+
+# Core processing libraries
+numpy==1.26.4
+scipy==1.13.0
+soundfile==0.12.1
+
+# High-quality resampler (optional but recommended)
+soxr==0.3.7
+
+# GUI framework
+PySide6==6.7.0
+darkdetect==0.8.0

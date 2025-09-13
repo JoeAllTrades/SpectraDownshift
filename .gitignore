@@ -1,0 +1,21 @@
+# Python temporary files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment folder
+venv/
+.venv/
+
+# Build & distribution artifacts
+build/
+dist/
+*.egg-info/
+
+# IDE and editor folders
+.idea/
+.vscode/
+
+# Default config file (users might change it)
+profiles.json

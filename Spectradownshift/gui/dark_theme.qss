@@ -1,0 +1,142 @@
+/* Spectradownshift/gui/dark_theme.qss */
+
+/* General */
+QWidget {
+    background-color: #1e1e2d;
+    color: #e0e1e9;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 10pt;
+}
+
+/* Text Elements */
+QLabel,
+QRadioButton {
+    background-color: transparent;
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* GroupBox */
+QGroupBox {
+    background-color: #2c2c41;
+    border: 1px solid #4a4a68;
+    border-radius: 8px;
+    padding: 20px 10px 10px 10px;
+    margin-top: 10px;
+}
+
+QGroupBox::title {
+    background-color: transparent;
+    color: #a0a3bd;
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Input Fields & Dropdowns */
+QLineEdit {
+    background-color: #1e1e2d;
+    border: 1px solid #4a4a68;
+    border-radius: 8px;
+    padding: 8px;
+    color: #f0f0f0;
+    font-weight: bold;
+}
+
+QComboBox {
+    background-color: transparent;
+    border: 1px solid #4a4a68;
+    border-radius: 8px;
+    padding: 8px;
+    color: #f0f0f0;
+    font-weight: bold;
+}
+
+QLineEdit:hover,
+QLineEdit:focus,
+QComboBox:hover,
+QComboBox:focus {
+    border-color: #7f7fdc;
+}
+
+QComboBox QAbstractItemView {
+    border: 1px solid #4a4a68;
+    background-color: #2c2c41;
+    selection-background-color: #7f7fdc;
+    color: #f0f0f0;
+    outline: 0;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+/* Radio Button Indicators */
+QRadioButton::indicator::unchecked {
+    background: #1e1e2d;
+    border: 1px solid #4a4a68;
+    border-radius: 8px;
+    width: 14px;
+    height: 14px;
+}
+
+QRadioButton::indicator::checked {
+    background-color: #7f7fdc;
+    border: 1px solid #4a4a68;
+    border-radius: 8px;
+    width: 14px;
+    height: 14px;
+}
+
+/* Buttons */
+QPushButton {
+    background-color: #4a4a68;
+    color: #e0e1e9;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-weight: bold;
+    outline: 0;
+}
+
+QPushButton:hover {
+    background-color: #595982;
+}
+
+QPushButton:pressed {
+    background-color: #3b3b55;
+}
+
+QPushButton:disabled {
+    background-color: #252535;
+    color: #777;
+}
+
+/* Specific Buttons */
+#StartButton,
+#StopButton {
+    font-size: 11pt;
+    padding: 10px;
+    min-height: 28px;
+}
+
+#StartButton {
+    background-color: #7f7fdc;
+    color: white;
+}
+
+#StartButton:hover {
+    background-color: #8f8fe6;
+}
+
+#DeleteButton:hover {
+    background-color: #e06c75;
+    color: white;
+}
+
+/* Log Area */
+QTextEdit {
+    background-color: #161621;
+    border: 1px solid #3a4a68;
+    border-radius: 8px;
+    font-family: "Consolas", monospace;
+    color: #a0a3bd;
+}
