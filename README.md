@@ -4,7 +4,7 @@
 
 A specialized utility to preserve high-frequency content when working with AI audio separation models.
 
-![Spectradownshift GUI](https://user-images.githubusercontent.com/592181/279401948-c2b4e478-cc82-4cde-a1d2-05469fa7f4a2.png)
+![Spectradownshift GUI](https://i.postimg.cc/VsWS3wKb/interf.jpg)
 *(Note: You will need to upload your own screenshot and update this link.)*
 
 ## What is this?
