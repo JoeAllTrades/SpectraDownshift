@@ -29,9 +29,9 @@ The workflow involves two steps:
 
 Spectradownshift provides two resampling engines with different trade-offs:
 
-*   **Scipy (Accurate):** This engine is mathematically lossless and fully reversible. It is slower, but a file that undergoes a `Prepare -> Restore` cycle (using the same settings) will be identical to the original (it will pass a null test). Choose this for maximum fidelity.
+*   **Scipy (Accurate):** This engine performs a reversible conversion. The null test of a `Prepare -> Restore` cycle does not result in a perfectly silent file, but introduces a uniform digital noise floor at an inaudible -80dB due to floating-point rounding errors. This process does not lose any of the original signal content. Choose this for maximum fidelity.
 
-*   **Soxr (Fast):** This engine is much faster and provides a near-lossless result. Due to its internal anti-aliasing methods, a tiny amount of high-frequency information may be lost during the `Prepare -> Restore` cycle (it will not pass a null test). The difference is often inaudible. Choose this for speed.
+*   **Soxr (Fast):** This engine is significantly faster. The null test reveals some of the **original signal's content is lost or altered** during the conversion process, resulting in a higher noise floor compared to Scipy. Choose this for speed.
 
 ## Installation
 
